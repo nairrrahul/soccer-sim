@@ -1,0 +1,1722 @@
+{
+    "Argentina": {
+      "atk": 88,
+      "def": 85,
+      "home_adv": 5,
+      "rank_pts": 1889,
+      "confed": "CONMEBOL",
+      "code": "ar"
+    },
+    "France": {
+      "atk": 91,
+      "def": 88,
+      "home_adv": 5,
+      "rank_pts": 1852,
+      "confed": "UEFA",
+      "code": "fr"
+    },
+    "Spain": {
+      "atk": 86,
+      "def": 86,
+      "home_adv": 5,
+      "rank_pts": 1836,
+      "confed": "UEFA",
+      "code": "es"
+    },
+    "England": {
+      "atk": 88,
+      "def": 85,
+      "home_adv": 5,
+      "rank_pts": 1817,
+      "confed": "UEFA",
+      "code": "GB_ENG"
+    },
+    "Brazil": {
+      "atk": 91,
+      "def": 87,
+      "home_adv": 5,
+      "rank_pts": 1772,
+      "confed": "CONMEBOL",
+      "code": "br"
+    },
+    "Belgium": {
+      "atk": 85,
+      "def": 82,
+      "home_adv": 5,
+      "rank_pts": 1768,
+      "confed": "UEFA",
+      "code": "BE"
+    },
+    "Netherlands": {
+      "atk": 83,
+      "def": 87,
+      "home_adv": 5,
+      "rank_pts": 1752,
+      "confed": "UEFA",
+      "code": "NL"
+    },
+    "Portugal": {
+      "atk": 89,
+      "def": 86,
+      "home_adv": 5,
+      "rank_pts": 1760,
+      "confed": "UEFA",
+      "code": "PT"
+    },
+    "Colombia": {
+      "atk": 84,
+      "def": 82,
+      "home_adv": 5,
+      "rank_pts": 1726,
+      "confed": "CONMEBOL",
+      "code": "CO"
+    },
+    "Italy": {
+      "atk": 84,
+      "def": 85,
+      "home_adv": 5,
+      "rank_pts": 1739,
+      "confed": "UEFA",
+      "code": "IT"
+    },
+    "Uruguay": {
+      "atk": 86,
+      "def": 83,
+      "home_adv": 5,
+      "rank_pts": 1692,
+      "confed": "CONMEBOL",
+      "code": "UY"
+    },
+    "Croatia": {
+      "atk": 86,
+      "def": 81,
+      "home_adv": 5,
+      "rank_pts": 1700,
+      "confed": "UEFA",
+      "code": "HR"
+    },
+    "Germany": {
+      "atk": 87,
+      "def": 85,
+      "home_adv": 5,
+      "rank_pts": 1676,
+      "confed": "UEFA",
+      "code": "DE"
+    },
+    "Morocco": {
+      "atk": 82,
+      "def": 81,
+      "home_adv": 5,
+      "rank_pts": 1701,
+      "confed": "CAF",
+      "code": "MA"
+    },
+    "Switzerland": {
+      "atk": 80,
+      "def": 81,
+      "home_adv": 5,
+      "rank_pts": 1640,
+      "confed": "UEFA",
+      "code": "CH"
+    },
+    "Japan": {
+      "atk": 81,
+      "def": 79,
+      "home_adv": 5,
+      "rank_pts": 1636,
+      "confed": "AFC",
+      "code": "JP"
+    },
+    "Mexico": {
+      "atk": 78,
+      "def": 76,
+      "home_adv": 7,
+      "rank_pts": 1641,
+      "confed": "CONCACAF",
+      "code": "MX"
+    },
+    "United States": {
+      "atk": 80,
+      "def": 78,
+      "home_adv": 5,
+      "rank_pts": 1632,
+      "confed": "CONCACAF", 
+      "code": "US"
+    },
+    "Iran": {
+      "atk": 76,
+      "def": 75,
+      "home_adv": 5,
+      "rank_pts": 1623,
+      "confed": "AFC",
+      "code": "IR"
+    },
+    "Denmark": {
+      "atk": 82,
+      "def": 81,
+      "home_adv": 5,
+      "rank_pts": 1621,
+      "confed": "UEFA",
+      "code": "dk"
+    },
+    "Senegal": {
+      "atk": 79,
+      "def": 80,
+      "home_adv": 5,
+      "rank_pts": 1622,
+      "confed": "CAF",
+      "code": "SN"
+    },
+    "Austria": {
+      "atk": 80,
+      "def": 80,
+      "home_adv": 5,
+      "rank_pts": 1573,
+      "confed": "UEFA",
+      "code": "AT"
+    },
+    "South Korea": {
+      "atk": 81,
+      "def": 74,
+      "home_adv": 5,
+      "rank_pts": 1580,
+      "confed": "AFC",
+      "code": "KR"
+    },
+    "Ukraine": {
+      "atk": 80,
+      "def": 79,
+      "home_adv": 5,
+      "rank_pts": 1544,
+      "confed": "UEFA",
+      "code": "UA"
+    },
+    "Australia": {
+      "atk": 75,
+      "def": 73,
+      "home_adv": 5,
+      "rank_pts": 1548,
+      "confed": "AFC",
+      "code": "AU"
+    },
+    "Turkiye": {
+      "atk": 77,
+      "def": 79,
+      "home_adv": 5,
+      "rank_pts": 1539,
+      "confed": "UEFA",
+      "code": "TR"
+    },
+    "Ecuador": {
+      "atk": 79,
+      "def": 80,
+      "home_adv": 5,
+      "rank_pts": 1535,
+      "confed": "CONMEBOL",
+      "code": "EC"
+    },
+    "Sweden": {
+      "atk": 82,
+      "def": 78,
+      "home_adv": 5,
+      "rank_pts": 1528,
+      "confed": "UEFA",
+      "code": "SE"
+    },
+    "Wales": {
+      "atk": 75,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1527,
+      "confed": "UEFA",
+      "code": "GB_WLS"
+    },
+    "Poland": {
+      "atk": 81,
+      "def": 74,
+      "home_adv": 5,
+      "rank_pts": 1516,
+      "confed": "UEFA",
+      "code": "PL"
+    },
+    "Egypt": {
+      "atk": 78,
+      "def": 73,
+      "home_adv": 5,
+      "rank_pts": 1525,
+      "confed": "CAF",
+      "code": "EG"
+    },
+    "Hungary": {
+      "atk": 78,
+      "def": 76,
+      "home_adv": 5,
+      "rank_pts": 1511,
+      "confed": "UEFA",
+      "code": "hu"
+    },
+    "Cote d'Ivoire": {
+      "atk": 79,
+      "def": 78,
+      "home_adv": 5,
+      "rank_pts": 1505,
+      "confed": "CAF",
+      "code": "CI"
+    },
+    "Russia": {
+      "atk": 71,
+      "def": 71,
+      "home_adv": 5,
+      "rank_pts": 1509,
+      "confed": "UEFA",
+      "code": "RU"
+    },
+    "Serbia": {
+      "atk": 83,
+      "def": 78,
+      "home_adv": 5,
+      "rank_pts": 1502,
+      "confed": "UEFA",
+      "code": "RS"
+    },
+    "Tunisia": {
+      "atk": 76,
+      "def": 76,
+      "home_adv": 5,
+      "rank_pts": 1498,
+      "confed": "CAF",
+      "code": "TN"
+    },
+    "Panama": {
+      "atk": 73,
+      "def": 75,
+      "home_adv": 5,
+      "rank_pts": 1486,
+      "confed": "CONCACAF",
+      "code": "PA"
+    },
+    "Canada": {
+      "atk": 77,
+      "def": 74,
+      "home_adv": 5,
+      "rank_pts": 1483,
+      "confed": "CONCACAF",
+      "code": "CA"
+    },
+    "Nigeria": {
+      "atk": 83,
+      "def": 78,
+      "home_adv": 5,
+      "rank_pts": 1503,
+      "confed": "CAF",
+      "code": "NG"
+    },
+    "Venezuela": {
+      "atk": 76,
+      "def": 73,
+      "home_adv": 5,
+      "rank_pts": 1509,
+      "confed": "CONMEBOL",
+      "code": "VE"
+    },
+    "Algeria": {
+      "atk": 80,
+      "def": 76,
+      "home_adv": 5,
+      "rank_pts": 1486,
+      "confed": "CAF",
+      "code": "DZ"
+    },
+    "Slovakia": {
+      "atk": 76,
+      "def": 76,
+      "home_adv": 5,
+      "rank_pts": 1469,
+      "confed": "UEFA",
+      "code": "SK"
+    },
+    "Peru": {
+      "atk": 73,
+      "def": 74,
+      "home_adv": 5,
+      "rank_pts": 1481,
+      "confed": "CONMEBOL",
+      "code": "PE"
+    },
+    "Qatar": {
+      "atk": 72,
+      "def": 73,
+      "home_adv": 5,
+      "rank_pts": 1489,
+      "confed": "AFC",
+      "code": "QA"
+    },
+    "Romania": {
+      "atk": 76,
+      "def": 75,
+      "home_adv": 5,
+      "rank_pts": 1473,
+      "confed": "UEFA",
+      "code": "RO"
+    },
+    "Czechia": {
+      "atk": 76,
+      "def": 76,
+      "home_adv": 5,
+      "rank_pts": 1482,
+      "confed": "UEFA",
+      "code": "CZ"
+    },
+    "Norway": {
+      "atk": 81,
+      "def": 76,
+      "home_adv": 5,
+      "rank_pts": 1505,
+      "confed": "UEFA",
+      "code": "NO"
+    },
+    "Greece": {
+      "atk": 77,
+      "def": 77,
+      "home_adv": 5,
+      "rank_pts": 1472,
+      "confed": "UEFA",
+      "code": "GR"
+    },
+    "Chile": {
+      "atk": 75,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1459,
+      "confed": "CONMEBOL",
+      "code": "CL"
+    },
+    "Costa Rica": {
+      "atk": 70,
+      "def": 76,
+      "home_adv": 5,
+      "rank_pts": 1466,
+      "confed": "CONCACAF",
+      "code": "CR"
+    },
+    "Slovenia": {
+      "atk": 77,
+      "def": 73,
+      "home_adv": 5,
+      "rank_pts": 1462,
+      "confed": "UEFA",
+      "code": "SI"
+    },
+    "Scotland": {
+      "atk": 75,
+      "def": 79,
+      "home_adv": 5,
+      "rank_pts": 1463,
+      "confed": "UEFA",
+      "code": "GB_SCT"
+    },
+    "Cameroon": {
+      "atk": 77,
+      "def": 76,
+      "home_adv": 5,
+      "rank_pts": 1468,
+      "confed": "CAF",
+      "code": "CM"
+    },
+    "Mali": {
+      "atk": 76,
+      "def": 77,
+      "home_adv": 5,
+      "rank_pts": 1455,
+      "confed": "CAF",
+      "code": "ML"
+    },
+    "Iraq": {
+      "atk": 72,
+      "def": 73,
+      "home_adv": 5,
+      "rank_pts": 1424,
+      "confed": "AFC",
+      "code": "IQ"
+    },
+    "Saudi Arabia": {
+      "atk": 71,
+      "def": 74,
+      "home_adv": 5,
+      "rank_pts": 1436,
+      "confed": "AFC",
+      "code": "SA"
+    },
+    "Paraguay": {
+      "atk": 76,
+      "def": 74,
+      "home_adv": 5,
+      "rank_pts": 1417,
+      "confed": "CONMEBOL",
+      "code": "PY"
+    },
+    "DR Congo": {
+      "atk": 76,
+      "def": 76,
+      "home_adv": 5,
+      "rank_pts": 1413,
+      "confed": "CAF",
+      "code": "CD"
+    },
+    "South Africa": {
+      "atk": 75,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1433,
+      "confed": "CAF",
+      "code": "ZA"
+    },
+    "Uzbekistan": {
+      "atk": 74,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1415,
+      "confed": "AFC",
+      "code": "UZ"
+    },
+    "Jamaica": {
+      "atk": 78,
+      "def": 66,
+      "home_adv": 5,
+      "rank_pts": 1403,
+      "confed": "CONCACAF",
+      "code": "JM"
+    },
+    "Ireland": {
+      "atk": 73,
+      "def": 77,
+      "home_adv": 5,
+      "rank_pts": 1388,
+      "confed": "UEFA",
+      "code": "IE"
+    },
+    "Burkina Faso": {
+      "atk": 73,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1395,
+      "confed": "CAF",
+      "code": "BF"
+    },
+    "Finland": {
+      "atk": 74,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1378,
+      "confed": "UEFA",
+      "code": "FI"
+    },
+    "Cabo Verde": {
+      "atk": 73,
+      "def": 73,
+      "home_adv": 5,
+      "rank_pts": 1378,
+      "confed": "CAF",
+      "code": "CV"
+    },
+    "Jordan": {
+      "atk": 70,
+      "def": 69,
+      "home_adv": 5,
+      "rank_pts": 1384,
+      "confed": "AFC",
+      "code": "JO"
+    },
+    "Georgia": {
+      "atk": 76,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1378,
+      "confed": "UEFA",
+      "code": "GE"
+    },
+    "Albania": {
+      "atk": 73,
+      "def": 77,
+      "home_adv": 5,
+      "rank_pts": 1377,
+      "confed": "UEFA",
+      "code": "AL"
+    },
+    "United Arab Emirates": {
+      "atk": 70,
+      "def": 68,
+      "home_adv": 5,
+      "rank_pts": 1351,
+      "confed": "AFC",
+      "code": "ae"
+    },
+    "Ghana": {
+      "atk": 78,
+      "def": 70,
+      "home_adv": 5,
+      "rank_pts": 1356,
+      "confed": "CAF",
+      "code": "GH"
+    },
+    "Iceland": {
+      "atk": 75,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1340,
+      "confed": "UEFA",
+      "code": "IS"
+    },
+    "North Macedonia": {
+      "atk": 74,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1379,
+      "confed": "UEFA",
+      "code": "MK"
+    },
+    "Northern Ireland": {
+      "atk": 71,
+      "def": 75,
+      "home_adv": 5,
+      "rank_pts": 1360,
+      "confed": "UEFA",
+      "code": "GB_NIR"
+    },
+    "Montenegro": {
+      "atk": 73,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1332,
+      "confed": "UEFA",
+      "code": "ME"
+    },
+    "Bosnia and Herzegovina": {
+      "atk": 78,
+      "def": 73,
+      "home_adv": 5,
+      "rank_pts": 1333,
+      "confed": "UEFA",
+      "code": "BA"
+    },
+    "Bahrain": {
+      "atk": 69,
+      "def": 63,
+      "home_adv": 5,
+      "rank_pts": 1315,
+      "confed": "AFC",
+      "code": "BH"
+    },
+    "Honduras": {
+      "atk": 71,
+      "def": 68,
+      "home_adv": 5,
+      "rank_pts": 1311,
+      "confed": "CONCACAF",
+      "code": "HN"
+    },
+    "Oman": {
+      "atk": 66,
+      "def": 65,
+      "home_adv": 5,
+      "rank_pts": 1298,
+      "confed": "AFC",
+      "code": "OM"
+    },
+    "Israel": {
+      "atk": 73,
+      "def": 70,
+      "home_adv": 5,
+      "rank_pts": 1294,
+      "confed": "UEFA",
+      "code": "IL"
+    },
+    "El Salvador": {
+      "atk": 67,
+      "def": 65,
+      "home_adv": 5,
+      "rank_pts": 1309,
+      "confed": "CONCACAF",
+      "code": "SV"
+    },
+    "Bulgaria": {
+      "atk": 72,
+      "def": 71,
+      "home_adv": 5,
+      "rank_pts": 1308,
+      "confed": "UEFA",
+      "code": "bg"
+    },
+    "Guinea": {
+      "atk": 74,
+      "def": 72,
+      "home_adv": 5,
+      "rank_pts": 1281,
+      "confed": "CAF",
+      "code": "GN"
+    },
+    "Bolivia": {
+      "atk": 72,
+      "def": 70,
+      "home_adv": 12,
+      "rank_pts": 1307,
+      "confed": "CONMEBOL",
+      "code": "BO"
+    },
+    "Gabon": {
+      "atk": 72,
+      "def": 68,
+      "home_adv": 5,
+      "rank_pts": 1303,
+      "confed": "CAF",
+      "code": "GA"
+    },
+    "Angola": {
+      "atk": 73,
+      "def": 68,
+      "home_adv": 5,
+      "rank_pts": 1293,
+      "confed": "CAF",
+      "code": "AO"
+    },
+    "Haiti": {
+      "atk": 69,
+      "def": 64,
+      "home_adv": 5,
+      "rank_pts": 1279,
+      "confed": "CONCACAF",
+      "code": "HT"
+    },
+    "Luxembourg": {
+      "atk": 67,
+      "def": 64,
+      "home_adv": 5,
+      "rank_pts": 1258,
+      "confed": "UEFA",
+      "code": "LU"
+    },
+    "Curacao": {
+      "atk": 68,
+      "def": 65,
+      "home_adv": 5,
+      "rank_pts": 1251,
+      "confed": "CONCACAF",
+      "code": "CW"
+    },
+    "Benin": {
+      "atk": 65,
+      "def": 65,
+      "home_adv": 5,
+      "rank_pts": 1262,
+      "confed": "CAF",
+      "code": "BJ"
+    },
+    "Uganda": {
+      "atk": 68,
+      "def": 64,
+      "home_adv": 5,
+      "rank_pts": 1261,
+      "confed": "CAF",
+      "code": "UG"
+    },
+    "China": {
+      "atk": 70,
+      "def": 62,
+      "home_adv": 5,
+      "rank_pts": 1247,
+      "confed": "AFC",
+      "code": "CN"
+    },
+    "Syria": {
+      "atk": 68,
+      "def": 69,
+      "home_adv": 5,
+      "rank_pts": 1254,
+      "confed": "AFC",
+      "code": "SY"
+    },
+    "Zambia": {
+      "atk": 73,
+      "def": 69,
+      "home_adv": 5,
+      "rank_pts": 1253,
+      "confed": "CAF",
+      "code": "ZM"
+    },
+    "Equatorial Guinea": {
+      "atk": 63,
+      "def": 70,
+      "home_adv": 5,
+      "rank_pts": 1253,
+      "confed": "CAF",
+      "code": "GQ"
+    },
+    "New Zealand": {
+      "atk": 70,
+      "def": 70,
+      "home_adv": 5,
+      "rank_pts": 1258,
+      "confed": "OFC",
+      "code": "NZ"
+    },
+    "Armenia": {
+      "atk": 70,
+      "def": 62,
+      "home_adv": 5,
+      "rank_pts": 1223,
+      "confed": "UEFA", 
+      "code": "am"
+    },
+    "Belarus": {
+      "atk": 66,
+      "def": 64,
+      "home_adv": 5,
+      "rank_pts": 1229,
+      "confed": "UEFA",
+      "code": "by"
+    },
+    "Palestine": {
+      "atk": 65,
+      "def": 61,
+      "home_adv": 5,
+      "rank_pts": 1226,
+      "confed": "AFC",
+      "code": "PS"
+    },
+    "Mozambique": {
+      "atk": 67,
+      "def": 64,
+      "home_adv": 5,
+      "rank_pts": 1230,
+      "confed": "CAF",
+      "code": "MZ"
+    },
+    "Thailand": {
+      "atk": 68,
+      "def": 68,
+      "home_adv": 5,
+      "rank_pts": 1229,
+      "confed": "AFC",
+      "code": "TH"
+    },
+    "Trinidad and Tobago": {
+      "atk": 65,
+      "def": 63,
+      "home_adv": 5,
+      "rank_pts": 1206,
+      "confed": "CONCACAF",
+      "code": "TT"
+    },
+    "Kenya": {
+      "atk": 67,
+      "def": 61,
+      "home_adv": 5,
+      "rank_pts": 1213,
+      "confed": "CAF",
+      "code": "KE"
+    },
+    "Tajikistan": {
+      "atk": 62,
+      "def": 63,
+      "home_adv": 5,
+      "rank_pts": 1201,
+      "confed": "AFC",
+      "code": "TJ"
+    },
+    "Kosovo": {
+      "atk": 70,
+      "def": 64,
+      "home_adv": 5,
+      "rank_pts": 1200,
+      "confed": "UEFA",
+      "code": "XK"
+    },
+    "Namibia": {
+      "atk": 64,
+      "def": 61,
+      "home_adv": 5,
+      "rank_pts": 1208,
+      "confed": "CAF",
+      "code": "NA"
+    },
+    "Kyrgyzstan": {
+      "atk": 64,
+      "def": 61,
+      "home_adv": 5,
+      "rank_pts": 1209,
+      "confed": "AFC",
+      "code": "KG"
+    },
+    "Guatemala": {
+      "atk": 67,
+      "def": 62,
+      "home_adv": 5,
+      "rank_pts": 1193,
+      "confed": "CONCACAF",
+      "code": "GT"
+    },
+    "Madagascar": {
+      "atk": 66,
+      "def": 58,
+      "home_adv": 5,
+      "rank_pts": 1160,
+      "confed": "CAF",
+      "code": "mg"
+    },
+    "Kazakhstan": {
+      "atk": 65,
+      "def": 62,
+      "home_adv": 5,
+      "rank_pts": 1197,
+      "confed": "UEFA",
+      "code": "KZ"
+    },
+    "Tanzania": {
+      "atk": 65,
+      "def": 66,
+      "home_adv": 5,
+      "rank_pts": 1154,
+      "confed": "CAF",
+      "code": "TZ"
+    },
+    "North Korea": {
+      "atk": 65,
+      "def": 64,
+      "home_adv": 5,
+      "rank_pts": 1183,
+      "confed": "AFC",
+      "code": "KP"
+    },
+    "Mauritania": {
+      "atk": 63,
+      "def": 56,
+      "home_adv": 5,
+      "rank_pts": 1188,
+      "confed": "CAF",
+      "code": "MR"
+    },
+    "Azerbaijan": {
+      "atk": 63,
+      "def": 60,
+      "home_adv": 5,
+      "rank_pts": 1201,
+      "confed": "UEFA",
+      "code": "MZ"
+    },
+    "Lebanon": {
+      "atk": 64,
+      "def": 62,
+      "home_adv": 5,
+      "rank_pts": 1179,
+      "confed": "AFC",
+      "code": "LB"
+    },
+    "Guinea-Bissau": {
+      "atk": 62,
+      "def": 58,
+      "home_adv": 5,
+      "rank_pts": 1167,
+      "confed": "CAF",
+      "code": "GW"
+    },
+    "Vietnam": {
+      "atk": 62,
+      "def": 62,
+      "home_adv": 5,
+      "rank_pts": 1166,
+      "confed": "AFC",
+      "code": "VN"
+    },
+    "Congo": {
+      "atk": 64,
+      "def": 61,
+      "home_adv": 5,
+      "rank_pts": 1135,
+      "confed": "CAF",
+      "code": "CG"
+    },
+    "Comoros": {
+      "atk": 70,
+      "def": 64,
+      "home_adv": 5,
+      "rank_pts": 1173,
+      "confed": "CAF",
+      "code": "KM"
+    },
+    "Togo": {
+      "atk": 63,
+      "def": 61,
+      "home_adv": 5,
+      "rank_pts": 1161,
+      "confed": "CAF",
+      "code": "TG"
+    },
+    "Sudan": {
+      "atk": 64,
+      "def": 65,
+      "home_adv": 5,
+      "rank_pts": 1160,
+      "confed": "CAF",
+      "code": "SD"
+    },
+    "Libya": {
+      "atk": 65,
+      "def": 62,
+      "home_adv": 5,
+      "rank_pts": 1134,
+      "confed": "CAF",
+      "code": "LY"
+    },
+    "Estonia": {
+      "atk": 63,
+      "def": 60,
+      "home_adv": 5,
+      "rank_pts": 1154,
+      "confed": "UEFA",
+      "code": "EE"
+    },
+    "Cyprus": {
+      "atk": 65,
+      "def": 63,
+      "home_adv": 5,
+      "rank_pts": 1159,
+      "confed": "UEFA",
+      "code": "CY"
+    },
+    "Zimbabwe": {
+      "atk": 70,
+      "def": 64,
+      "home_adv": 5,
+      "rank_pts": 1140,
+      "confed": "CAF",
+      "code": "ZW"
+    },
+    "Sierra Leone": {
+      "atk": 60,
+      "def": 55,
+      "home_adv": 5,
+      "rank_pts": 1134,
+      "confed": "CAF",
+      "code": "SL"
+    },
+    "India": {
+      "atk": 60,
+      "def": 59,
+      "home_adv": 5,
+      "rank_pts": 1123,
+      "confed": "AFC",
+      "code": "IN"
+    },
+    "Niger": {
+      "atk": 59,
+      "def": 56,
+      "home_adv": 5,
+      "rank_pts": 1137,
+      "confed": "CAF",
+      "code": "NE"
+    },
+    "Central African Republic": {
+      "atk": 62,
+      "def": 56,
+      "home_adv": 5,
+      "rank_pts": 1109,
+      "confed": "CAF",
+      "code": "CF"
+    },
+    "Indonesia": {
+      "atk": 64,
+      "def": 71,
+      "home_adv": 5,
+      "rank_pts": 1131,
+      "confed": "AFC",
+      "code": "ID"
+    },
+    "Rwanda": {
+      "atk": 59,
+      "def": 59,
+      "home_adv": 5,
+      "rank_pts": 1124,
+      "confed": "CAF",
+      "code": "RW"
+    },
+    "Nicaragua": {
+      "atk": 61,
+      "def": 54,
+      "home_adv": 5,
+      "rank_pts": 1132,
+      "confed": "CONCACAF",
+      "code": "NI"
+    },
+    "Malaysia": {
+      "atk": 59,
+      "def": 54,
+      "home_adv": 5,
+      "rank_pts": 1118,
+      "confed": "AFC",
+      "code": "MY"
+    },
+    "Malawi": {
+      "atk": 60,
+      "def": 57,
+      "home_adv": 5,
+      "rank_pts": 1118,
+      "confed": "CAF",
+      "code": "MW"
+    },
+    "Kuwait": {
+      "atk": 64,
+      "def": 65,
+      "home_adv": 5,
+      "rank_pts": 1117,
+      "confed": "AFC",
+      "code": "KW"
+    },
+    "Gambia": {
+      "atk": 69,
+      "def": 64,
+      "home_adv": 5,
+      "rank_pts": 1112,
+      "confed": "CAF",
+      "code": "GM"
+    },
+    "Burundi": {
+      "atk": 59,
+      "def": 58,
+      "home_adv": 5,
+      "rank_pts": 1094,
+      "confed": "CAF",
+      "code": "BI"
+    },
+    "Latvia": {
+      "atk": 60,
+      "def": 62,
+      "home_adv": 5,
+      "rank_pts": 1098,
+      "confed": "UEFA",
+      "code": "LV"
+    },
+    "Suriname": {
+      "atk": 69,
+      "def": 68,
+      "home_adv": 5,
+      "rank_pts": 1090,
+      "confed": "CONCACAF",
+      "code": "SR"
+    },
+    "Lithuania": {
+      "atk": 62,
+      "def": 60,
+      "home_adv": 5,
+      "rank_pts": 1102,
+      "confed": "UEFA",
+      "code": "LT"
+    },
+    "Faroe Islands": {
+      "atk": 60,
+      "def": 60,
+      "home_adv": 5,
+      "rank_pts": 1050,
+      "confed": "UEFA",
+      "code": "fo"
+    },
+    "St Kitts and Nevis": {
+      "atk": 57,
+      "def": 57,
+      "home_adv": 5,
+      "rank_pts": 1091,
+      "confed": "CONCACAF",
+      "code": "KN"
+    },
+    "Turkmenistan": {
+      "atk": 56,
+      "def": 58,
+      "home_adv": 5,
+      "rank_pts": 1058,
+      "confed": "AFC",
+      "code": "TM"
+    },
+    "Liberia": {
+      "atk": 54,
+      "def": 54,
+      "home_adv": 5,
+      "rank_pts": 1068,
+      "confed": "CAF",
+      "code": "LR"
+    },
+    "Solomon Islands": {
+      "atk": 52,
+      "def": 48,
+      "home_adv": 5,
+      "rank_pts": 1065,
+      "confed": "OFC",
+      "code": "SB"
+    },
+    "Ethiopia": {
+      "atk": 58,
+      "def": 54,
+      "home_adv": 5,
+      "rank_pts": 1050,
+      "confed": "CAF",
+      "code": "ET"
+    },
+    "Dominican Republic": {
+      "atk": 63,
+      "def": 60,
+      "home_adv": 5,
+      "rank_pts": 1038,
+      "confed": "CONCACAF",
+      "code": "DO"
+    },
+    "Botswana": {
+      "atk": 62,
+      "def": 58,
+      "home_adv": 5,
+      "rank_pts": 1064,
+      "confed": "CAF",
+      "code": "BW"
+    },
+    "Philippines": {
+      "atk": 59,
+      "def": 63,
+      "home_adv": 5,
+      "rank_pts": 1063,
+      "confed": "AFC",
+      "code": "PH"
+    },
+    "Moldova": {
+      "atk": 58,
+      "def": 59,
+      "home_adv": 5,
+      "rank_pts": 1065,
+      "confed": "UEFA",
+      "code": "MD"
+    },
+    "Fiji": {
+      "atk": 53,
+      "def": 53,
+      "home_adv": 5,
+      "rank_pts": 1043,
+      "confed": "OFC",
+      "code": "FJ"
+    },
+    "Antigua and Barbuda": {
+      "atk": 54,
+      "def": 50,
+      "home_adv": 5,
+      "rank_pts": 1034,
+      "confed": "CONCACAF",
+      "code": "ag"
+    },
+    "Afghanistan": {
+      "atk": 58,
+      "def": 54,
+      "home_adv": 5,
+      "rank_pts": 1034,
+      "confed": "AFC",
+      "code": "AF"
+    },
+    "Lesotho": {
+      "atk": 52,
+      "def": 56,
+      "home_adv": 5,
+      "rank_pts": 1022,
+      "confed": "CAF",
+      "code": "LS"
+    },
+    "Puerto Rico": {
+      "atk": 57,
+      "def": 54,
+      "home_adv": 5,
+      "rank_pts": 1021,
+      "confed": "CONCACAF",
+      "code": "PR"
+    },
+    "Yemen": {
+      "atk": 57,
+      "def": 57,
+      "home_adv": 5,
+      "rank_pts": 1009,
+      "confed": "AFC",
+      "code": "YE"
+    },
+    "Guyana": {
+      "atk": 56,
+      "def": 58,
+      "home_adv": 5,
+      "rank_pts": 1035,
+      "confed": "CONCACAF",
+      "code": "GY"
+    },
+    "Hong Kong": {
+      "atk": 55,
+      "def": 55,
+      "home_adv": 5,
+      "rank_pts": 1005,
+      "confed": "AFC",
+      "code": "HK"
+    },
+    "Tahiti": {
+      "atk": 50,
+      "def": 50,
+      "home_adv": 5,
+      "rank_pts": 1018,
+      "confed": "OFC",
+      "code": "PF"
+    },
+    "Eswatini": {
+      "atk": 52,
+      "def": 46,
+      "home_adv": 5,
+      "rank_pts": 1020,
+      "confed": "CAF", 
+      "code": "SZ"
+    },
+    "New Caledonia": {
+      "atk": 51,
+      "def": 54,
+      "home_adv": 5,
+      "rank_pts": 1017,
+      "confed": "OFC",
+      "code": "NC"
+    },
+    "Singapore": {
+      "atk": 49,
+      "def": 44,
+      "home_adv": 5,
+      "rank_pts": 1012,
+      "confed": "AFC",
+      "code": "SG"
+    },
+    "Vanuatu": {
+      "atk": 47,
+      "def": 53,
+      "home_adv": 5,
+      "rank_pts": 1008,
+      "confed": "OFC",
+      "code": "VU"
+    },
+    "Maldives": {
+      "atk": 42,
+      "def": 42,
+      "home_adv": 5,
+      "rank_pts": 1003,
+      "confed": "AFC",
+      "code": "MV"
+    },
+    "St Lucia": {
+      "atk": 56,
+      "def": 59,
+      "home_adv": 5,
+      "rank_pts": 998,
+      "confed": "CONCACAF",
+      "code": "LC"
+    },
+    "Cuba": {
+      "atk": 63,
+      "def": 61,
+      "home_adv": 5,
+      "rank_pts": 989,
+      "confed": "CONCACAF",
+      "code": "CU"
+    },
+    "Taiwan": {
+      "atk": 48,
+      "def": 45,
+      "home_adv": 5,
+      "rank_pts": 992,
+      "confed": "AFC",
+      "code": "TW"
+    },
+    "Myanmar": {
+      "atk": 52,
+      "def": 52,
+      "home_adv": 5,
+      "rank_pts": 973,
+      "confed": "AFC",
+      "code": "MM"
+    },
+    "Papua New Guinea": {
+      "atk": 52,
+      "def": 50,
+      "home_adv": 5,
+      "rank_pts": 991,
+      "confed": "OFC",
+      "code": "PG"
+    },
+    "Andorra": {
+      "atk": 56,
+      "def": 50,
+      "home_adv": 5,
+      "rank_pts": 972,
+      "confed": "UEFA",
+      "code": "AD"
+    },
+    "Bermuda": {
+      "atk": 52,
+      "def": 49,
+      "home_adv": 5,
+      "rank_pts": 982,
+      "confed": "CONCACAF",
+      "code": "BM"
+    },
+    "Malta": {
+      "atk": 53,
+      "def": 54,
+      "home_adv": 5,
+      "rank_pts": 984,
+      "confed": "UEFA",
+      "code": "MT"
+    },
+    "South Sudan": {
+      "atk": 55,
+      "def": 47,
+      "home_adv": 5,
+      "rank_pts": 968,
+      "confed": "CAF",
+      "code": "SS"
+    },
+    "Grenada": {
+      "atk": 55,
+      "def": 52,
+      "home_adv": 5,
+      "rank_pts": 946,
+      "confed": "CONCACAF",
+      "code": "GD"
+    },
+    "St Vincent and the Grenadines": {
+      "atk": 52,
+      "def": 52,
+      "home_adv": 5,
+      "rank_pts": 944,
+      "confed": "CONCACAF",
+      "code": "VC"
+    },
+    "Barbados": {
+      "atk": 53,
+      "def": 46,
+      "home_adv": 5,
+      "rank_pts": 947,
+      "confed": "CONCACAF",
+      "code": "bb"
+    },
+    "Nepal": {
+      "atk": 43,
+      "def": 43,
+      "home_adv": 5,
+      "rank_pts": 936,
+      "confed": "AFC",
+      "code": "NP"
+    },
+    "Chad": {
+      "atk": 50,
+      "def": 46,
+      "home_adv": 5,
+      "rank_pts": 932,
+      "confed": "CAF",
+      "code": "TD"
+    },
+    "Mauritius": {
+      "atk": 49,
+      "def": 46,
+      "home_adv": 5,
+      "rank_pts": 928,
+      "confed": "CAF",
+      "code": "MU"
+    },
+    "Montserrat": {
+      "atk": 50,
+      "def": 53,
+      "home_adv": 5,
+      "rank_pts": 924,
+      "confed": "CONCACAF",
+      "code": "MS"
+    },
+    "Cambodia": {
+      "atk": 47,
+      "def": 46,
+      "home_adv": 5,
+      "rank_pts": 920,
+      "confed": "AFC",
+      "code": "KH"
+    },
+    "Dominica": {
+      "atk": 52,
+      "def": 53,
+      "home_adv": 5,
+      "rank_pts": 913,
+      "confed": "CONCACAF",
+      "code": "DM"
+    },
+    "Belize": {
+      "atk": 48,
+      "def": 52,
+      "home_adv": 5,
+      "rank_pts": 904,
+      "confed": "CONCACAF",
+      "code": "BZ"
+    },
+    "Brunei": {
+      "atk": 45,
+      "def": 45,
+      "home_adv": 5,
+      "rank_pts": 917,
+      "confed": "AFC", 
+      "code": "bn"
+    },
+    "Bhutan": {
+      "atk": 43,
+      "def": 37,
+      "home_adv": 5,
+      "rank_pts": 907,
+      "confed": "AFC",
+      "code": "BT"
+    },
+    "Samoa": {
+      "atk": 40,
+      "def": 43,
+      "home_adv": 5,
+      "rank_pts": 897,
+      "confed": "OFC",
+      "code": "WS"
+    },
+    "Bangladesh": {
+      "atk": 44,
+      "def": 43,
+      "home_adv": 5,
+      "rank_pts": 901,
+      "confed": "AFC",
+      "code": "BD"
+    },
+    "Laos": {
+      "atk": 41,
+      "def": 47,
+      "home_adv": 5,
+      "rank_pts": 890,
+      "confed": "AFC",
+      "code": "LA"
+    },
+    "Mongolia": {
+      "atk": 41,
+      "def": 39,
+      "home_adv": 5,
+      "rank_pts": 884,
+      "confed": "AFC",
+      "code": "MN"
+    },
+    "American Samoa": {
+      "atk": 34,
+      "def": 34,
+      "home_adv": 5,
+      "rank_pts": 883,
+      "confed": "OFC",
+      "code": "AS"
+    },
+    "Sao Tome": {
+      "atk": 45,
+      "def": 43,
+      "home_adv": 5,
+      "rank_pts": 878,
+      "confed": "CAF",
+      "code": "ST"
+    },
+    "Cook Islands": {
+      "atk": 38,
+      "def": 38,
+      "home_adv": 5,
+      "rank_pts": 878,
+      "confed": "OFC",
+      "code": "CK"
+    },
+    "Djibouti": {
+      "atk": 41,
+      "def": 47,
+      "home_adv": 5,
+      "rank_pts": 875,
+      "confed": "CAF",
+      "code": "DJ"
+    },
+    "Macau": {
+      "atk": 37,
+      "def": 38,
+      "home_adv": 5,
+      "rank_pts": 872,
+      "confed": "AFC",
+      "code": "MO"
+    },
+    "Aruba": {
+      "atk": 46,
+      "def": 45,
+      "home_adv": 5,
+      "rank_pts": 857,
+      "confed": "CONCACAF",
+      "code": "aw"
+    },
+    "Cayman Islands": {
+      "atk": 47,
+      "def": 42,
+      "home_adv": 5,
+      "rank_pts": 868,
+      "confed": "CONCACAF",
+      "code": "KY"
+    },
+    "Eritrea": {
+      "atk": 40,
+      "def": 40,
+      "home_adv": 5,
+      "rank_pts": 845,
+      "confed": "CAF",
+      "code": "ER"
+    },
+    "Timor-Leste": {
+      "atk": 42,
+      "def": 43,
+      "home_adv": 5,
+      "rank_pts": 842,
+      "confed": "AFC",
+      "code": "TL"
+    },
+    "Pakistan": {
+      "atk": 45,
+      "def": 45,
+      "home_adv": 5,
+      "rank_pts": 843,
+      "confed": "AFC",
+      "code": "PK"
+    },
+    "Gibraltar": {
+      "atk": 54,
+      "def": 49,
+      "home_adv": 5,
+      "rank_pts": 836,
+      "confed": "UEFA",
+      "code": "gi"
+    },
+    "Tonga": {
+      "atk": 38,
+      "def": 36,
+      "home_adv": 5,
+      "rank_pts": 827,
+      "confed": "OFC",
+      "code": "TO"
+    },
+    "Seychelles": {
+      "atk": 44,
+      "def": 40,
+      "home_adv": 5,
+      "rank_pts": 831,
+      "confed": "CAF",
+      "code": "SC"
+    },
+    "Somalia": {
+      "atk": 46,
+      "def": 46,
+      "home_adv": 5,
+      "rank_pts": 830,
+      "confed": "CAF",
+      "code": "SO"
+    },
+    "Liechtenstein": {
+      "atk": 48,
+      "def": 47,
+      "home_adv": 5,
+      "rank_pts": 831,
+      "confed": "UEFA",
+      "code": "LI"
+    },
+    "Sri Lanka": {
+      "atk": 44,
+      "def": 36,
+      "home_adv": 5,
+      "rank_pts": 817,
+      "confed": "AFC",
+      "code": "LK"
+    },
+    "Guam": {
+      "atk": 37,
+      "def": 43,
+      "home_adv": 5,
+      "rank_pts": 822,
+      "confed": "AFC",
+      "code": "GU"
+    },
+    "Bahamas": {
+      "atk": 40,
+      "def": 40,
+      "home_adv": 5,
+      "rank_pts": 803,
+      "confed": "CONCACAF",
+      "code": "BS"
+    },
+    "Turks and Caicos Islands": {
+      "atk": 42,
+      "def": 39,
+      "home_adv": 5,
+      "rank_pts": 791,
+      "confed": "CONCACAF",
+      "code": "TC"
+    },
+    "US Virgin Islands": {
+      "atk": 38,
+      "def": 36,
+      "home_adv": 5,
+      "rank_pts": 792,
+      "confed": "CONCACAF",
+      "code": "VI"
+    },
+    "British Virgin Islands": {
+      "atk": 37,
+      "def": 36,
+      "home_adv": 5,
+      "rank_pts": 782,
+      "confed": "CONCACAF",
+      "code": "VG"
+    },
+    "Anguilla": {
+      "atk": 36,
+      "def": 36,
+      "home_adv": 5,
+      "rank_pts": 779,
+      "confed": "CONCACAF",
+      "code": "AI"
+    },
+    "San Marino": {
+      "atk": 46,
+      "def": 48,
+      "home_adv": 5,
+      "rank_pts": 746,
+      "confed": "UEFA",
+      "code": "SM"
+    },
+    "Martinique": {
+      "atk": 63,
+      "def": 62,
+      "home_adv": 5,
+      "rank_pts": 733,
+      "confed": "NAN",
+      "code": "MQ"
+    },
+    "Guadeloupe": {
+      "atk": 69,
+      "def": 58,
+      "home_adv": 5,
+      "rank_pts": 720,
+      "confed": "NAN",
+      "code": "GP"
+    },
+    "French Guiana": {
+      "atk": 58,
+      "def": 53,
+      "home_adv": 5,
+      "rank_pts": 701,
+      "confed": "NAN",
+      "code": "GF"
+    },
+    "Tuvalu": {
+      "atk": 34,
+      "def": 33,
+      "home_adv": 5,
+      "rank_pts": 619,
+      "confed": "NAN",
+      "code": "TV"
+    }
+  }
