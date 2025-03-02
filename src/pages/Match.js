@@ -2,6 +2,7 @@ import { useState } from "react";
 import { simulateMatch } from "../components/MatchEngine";
 import countryStats from "../configs/CountryStats.json";
 import  CountryDropdown  from "../components/CountryDropdown";
+import MatchEvents from "../components/MatchEvents";
 import { FaFutbol } from "react-icons/fa";
 import Flag from 'react-world-flags';
 import './Match.css';
@@ -15,7 +16,7 @@ function Match() {
 
   const handleSimulate = () => {
     if (homeTeam && awayTeam && homeTeam !== awayTeam) {
-      const matchResult = simulateMatch(countryStats[homeTeam], countryStats[awayTeam], yesKO, false);
+      const matchResult = simulateMatch(homeTeam, awayTeam, yesKO, false);
       console.log(matchResult);
       setResult({
         homeTeam: homeTeam,
@@ -118,6 +119,9 @@ function Match() {
             </>
             )}
           </div>
+
+          {result.matchEvents && <MatchEvents matchEvents={result.matchEvents} />}
+          
         </div>
       )}
     </div>

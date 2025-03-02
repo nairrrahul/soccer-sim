@@ -1,3 +1,19 @@
+import countryStats from "../configs/CountryStats.json";
+
+const eventTypes = {
+    START: "The period starts",
+    HALF: "We have arrived at half-time",
+    END: "The period ends",
+    ATK: "Dangerous attack by",
+    DEF: "Defensive clearance by",
+    GOAL: "Goal! Scored by"
+};
+
+const eventValues = {
+    GOAL: 200,
+    ATK: 160
+}
+
 export function simulateMatch(team1, team2, knockout, tournament) {
     let gameStats = coreEngine(team1, team2, 1, 91, tournament);
 
@@ -7,6 +23,7 @@ export function simulateMatch(team1, team2, knockout, tournament) {
         gameStats.homeGoalCount += newStats.homeGoalCount;
         gameStats.homeGoalList = gameStats.homeGoalList.concat(newStats.homeGoalList);
         gameStats.awayGoalList = gameStats.awayGoalList.concat(newStats.awayGoalList);
+        gameStats.matchEvents = {...gameStats.matchEvents, ...newStats.matchEvents};
 
         if(gameStats.awayGoalCount === gameStats.homeGoalCount) {
             return penaltyShootout(gameStats);
@@ -63,6 +80,7 @@ function penaltyShootout(gameStats) {
         homeGoalList: gameStats.homeGoalList,
         awayGoalCount: gameStats.awayGoalCount,
         awayGoalList: gameStats.awayGoalList,
+        matchEvents: gameStats.matchEvents,
         penalties:{
             awayPens: awayPenalties,
             awayPensMade: awayPensScored,
@@ -86,7 +104,11 @@ function penaltyResult(val) {
     }
 }
 
-function coreEngine(team1, team2, minStart, minEnd, tournamentStatus) {
+function coreEngine(team1Name, team2Name, minStart, minEnd, tournamentStatus) {
+
+    let team1 = countryStats[team1Name];
+    let team2 = countryStats[team2Name];
+
     let ballPos = 0.0;
     let homeGoals = 0;
     let awayGoals = 0;
@@ -95,13 +117,21 @@ function coreEngine(team1, team2, minStart, minEnd, tournamentStatus) {
     let awayGoalTimes = [];
     let halfTime = minStart + Math.floor((minEnd - minStart) / 2);
     let homeAdvantage = tournamentStatus ? 0 : team1.home_adv;
+    let matchEvents = {};
 
     for(let i = minStart; i < minEnd; i++) {
         let homeVal = 0;
         let awayVal = 0;
+        let initBallPos = ballPos;
+        let goalScored = false;
+
+        if(i === minStart) {
+            matchEvents[i] = [null, eventTypes.START]
+        }
 
         if(i === halfTime) {
             momentum = Math.floor(momentum / Math.abs(momentum));
+            matchEvents[i] = [null, eventTypes.HALF];
         }
 
         if(momentum >= 0){
@@ -133,18 +163,43 @@ function coreEngine(team1, team2, minStart, minEnd, tournamentStatus) {
             }
         }
 
-        if(ballPos > 200) {
+        //TODO: fix event overwriting
+        if(ballPos > eventValues.GOAL) {
             homeGoals += 1;
             momentum = 0;
             ballPos = 0;
             homeGoalTimes.push(i);
+            matchEvents[i] = [team1.code, eventTypes.GOAL.concat(" ", team1Name)];
+            goalScored = true;
         }
 
-        if(ballPos < -200) {
+        if(ballPos < -eventValues.GOAL) {
             awayGoals += 1;
             momentum = 0;
             ballPos = 0;
             awayGoalTimes.push(i);
+            matchEvents[i] = [team2.code, eventTypes.GOAL.concat(" ", team2Name)];
+            goalScored = true;
+        }
+
+        //TODO: fix event overwriting
+        if(!goalScored) {
+            if(ballPos >= eventValues.ATK && initBallPos < eventValues.ATK) {
+                matchEvents[i] = [team1.code, eventTypes.ATK.concat(" ", team1Name)];
+            } else if(ballPos < eventValues.ATK && initBallPos >= eventValues.ATK) {
+                matchEvents[i] = [team2.code, eventTypes.DEF.concat(" ", team2Name)];
+            }
+    
+            if(ballPos <= -eventValues.ATK && initBallPos > -eventValues.ATK) {
+                matchEvents[i] = [team2.code, eventTypes.ATK.concat(" ", team2Name)];
+            } else if(ballPos > -eventValues.ATK && initBallPos <= -eventValues.ATK) {
+                matchEvents[i] = [team1.code, eventTypes.DEF.concat(" ", team1Name)];
+            }
+        }
+
+        //TODO: fix event overwriting
+        if(i === minEnd - 1) {
+            matchEvents[i] = [null, eventTypes.END];
         }
 
     }
@@ -154,6 +209,7 @@ function coreEngine(team1, team2, minStart, minEnd, tournamentStatus) {
         awayGoalCount: awayGoals,
         homeGoalList: homeGoalTimes,
         awayGoalList: awayGoalTimes,
-        penalties: null
+        penalties: null,
+        matchEvents: matchEvents
     };
 }
