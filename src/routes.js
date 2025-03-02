@@ -7,10 +7,10 @@ import TournamentSimulation from "./pages/TournamentSimulation";
 function AppRoutes() {
   return (
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/match" element={<Match />} />
-        <Route path="/continuous-simulation" element={<ContinuousSimulation />} />
-        <Route path="/tournament-simulation" element={<TournamentSimulation />} />
+        <Route path="/soccer-sim" element={<Home />} />
+        <Route path="/soccer-sim/match" element={<Match />} />
+        <Route path="/soccer-sim/continuous-simulation" element={<ContinuousSimulation />} />
+        <Route path="/soccer-sim/tournament-simulation" element={<TournamentSimulation />} />
       </Routes>
   );
 }
