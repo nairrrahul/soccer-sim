@@ -23,7 +23,9 @@ export function simulateMatch(team1, team2, knockout, tournament) {
         gameStats.homeGoalCount += newStats.homeGoalCount;
         gameStats.homeGoalList = gameStats.homeGoalList.concat(newStats.homeGoalList);
         gameStats.awayGoalList = gameStats.awayGoalList.concat(newStats.awayGoalList);
-        gameStats.matchEvents = {...gameStats.matchEvents, ...newStats.matchEvents};
+        gameStats.matchEvents = {...newStats.matchEvents, ...gameStats.matchEvents};
+        //there will be overlap at minute 90
+        gameStats.matchEvents[90][1] = gameStats.matchEvents[90][1].concat(newStats.matchEvents[90][1]);
 
         if(gameStats.awayGoalCount === gameStats.homeGoalCount) {
             return penaltyShootout(gameStats);
@@ -126,12 +128,12 @@ function coreEngine(team1Name, team2Name, minStart, minEnd, tournamentStatus) {
         let goalScored = false;
 
         if(i === minStart) {
-            matchEvents[i] = [null, eventTypes.START]
+            matchEvents[i] = [null, [eventTypes.START]];
+            
         }
 
         if(i === halfTime) {
-            momentum = Math.floor(momentum / Math.abs(momentum));
-            matchEvents[i] = [null, eventTypes.HALF];
+            matchEvents[i] = [null, [eventTypes.HALF]]; 
         }
 
         if(momentum >= 0){
@@ -163,13 +165,17 @@ function coreEngine(team1Name, team2Name, minStart, minEnd, tournamentStatus) {
             }
         }
 
-        //TODO: fix event overwriting
         if(ballPos > eventValues.GOAL) {
             homeGoals += 1;
             momentum = 0;
             ballPos = 0;
             homeGoalTimes.push(i);
-            matchEvents[i] = [team1.code, eventTypes.GOAL.concat(" ", team1Name)];
+            if(!(i in matchEvents)) {
+                matchEvents[i] = [team1.code, [eventTypes.GOAL.concat(" ", team1Name)]];
+            } else {
+                matchEvents[i][1].push(eventTypes.GOAL.concat(" ", team1Name));
+            }
+            
             goalScored = true;
         }
 
@@ -178,28 +184,55 @@ function coreEngine(team1Name, team2Name, minStart, minEnd, tournamentStatus) {
             momentum = 0;
             ballPos = 0;
             awayGoalTimes.push(i);
-            matchEvents[i] = [team2.code, eventTypes.GOAL.concat(" ", team2Name)];
+            if(!(i in matchEvents)) {
+                matchEvents[i] = [team2.code, [eventTypes.GOAL.concat(" ", team2Name)]];
+            } else {
+                matchEvents[i][1].push(eventTypes.GOAL.concat(" ", team2Name));
+            }
+            
             goalScored = true;
         }
 
-        //TODO: fix event overwriting
         if(!goalScored) {
             if(ballPos >= eventValues.ATK && initBallPos < eventValues.ATK) {
-                matchEvents[i] = [team1.code, eventTypes.ATK.concat(" ", team1Name)];
+                if(!(i in matchEvents)) {
+                    matchEvents[i] = [team1.code, [eventTypes.ATK.concat(" ", team1Name)]];
+                } else {
+                    matchEvents[i][1].push(eventTypes.ATK.concat(" ", team1Name));
+                }
+                
             } else if(ballPos < eventValues.ATK && initBallPos >= eventValues.ATK) {
-                matchEvents[i] = [team2.code, eventTypes.DEF.concat(" ", team2Name)];
+                if(!(i in matchEvents)) {
+                    matchEvents[i] = [team2.code, [eventTypes.DEF.concat(" ", team2Name)]];
+                } else {
+                    matchEvents[i][1].push(eventTypes.DEF.concat(" ", team2Name));
+                }
+                
             }
     
             if(ballPos <= -eventValues.ATK && initBallPos > -eventValues.ATK) {
-                matchEvents[i] = [team2.code, eventTypes.ATK.concat(" ", team2Name)];
+                if(!(i in matchEvents)) {
+                    matchEvents[i] = [team2.code, [eventTypes.ATK.concat(" ", team2Name)]];
+                } else {
+                    matchEvents[i][1].push(eventTypes.ATK.concat(" ", team2Name));
+                }
+                
             } else if(ballPos > -eventValues.ATK && initBallPos <= -eventValues.ATK) {
-                matchEvents[i] = [team1.code, eventTypes.DEF.concat(" ", team1Name)];
+                if(!(i in matchEvents)) {
+                    matchEvents[i] = [team1.code, [eventTypes.DEF.concat(" ", team1Name)]];
+                } else {
+                    matchEvents[i][1].push(eventTypes.DEF.concat(" ", team1Name));
+                }
+                
             }
         }
 
-        //TODO: fix event overwriting
         if(i === minEnd - 1) {
-            matchEvents[i] = [null, eventTypes.END];
+            if(!(i in matchEvents)) {
+                matchEvents[i] = [null, [eventTypes.END]];
+            } else {
+                matchEvents[i][1].push(eventTypes.END);
+            }
         }
 
     }

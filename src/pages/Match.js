@@ -17,7 +17,6 @@ function Match() {
   const handleSimulate = () => {
     if (homeTeam && awayTeam && homeTeam !== awayTeam) {
       const matchResult = simulateMatch(homeTeam, awayTeam, yesKO, false);
-      console.log(matchResult);
       setResult({
         homeTeam: homeTeam,
         awayTeam: awayTeam,

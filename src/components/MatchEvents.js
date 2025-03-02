@@ -4,13 +4,14 @@ import "./MatchEvents.css";
 
 function MatchEvents({ matchEvents }) {
   const [isExpanded, setIsExpanded] = useState(false);
-
   const sortedEvents = Object.entries(matchEvents)
     .sort((a, b) => a[0] - b[0])
-    .map(([minute, [flag, event]], index) => (
-      <div key={index} className="match-event" style={{fontSize: 16}}>
-        {minute}': {flag && <Flag code={flag} height="15" />} {event}
-      </div>
+    .flatMap(([minute, [flag, events]], index) => (
+      events.map((event, idx) => (
+        <div key={`${index}-${idx}`} className="match-event" style={{fontSize: 16}}>
+          {minute}': {flag && <Flag code={flag} height="15" />} {event}
+        </div>
+      ))   
     ));
 
   return (
