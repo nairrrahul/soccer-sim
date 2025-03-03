@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { simulateMatch } from "../components/MatchEngine";
+import { simulateMatch } from "../components/simulation/MatchEngine";
 import countryStats from "../configs/CountryStats.json";
 import  CountryDropdown  from "../components/CountryDropdown";
 import MatchEvents from "../components/MatchEvents";

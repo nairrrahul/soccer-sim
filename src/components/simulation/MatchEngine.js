@@ -1,4 +1,4 @@
-import countryStats from "../configs/CountryStats.json";
+import countryStats from "../../configs/CountryStats.json";
 
 const eventTypes = {
     START: "The period starts",

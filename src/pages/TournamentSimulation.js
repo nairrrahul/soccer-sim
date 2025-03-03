@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { simulateLeague } from "../components/LeagueSimulation";
+import { simulateLeague } from "../components/simulation/LeagueSimulation";
 import  CountryDropdown  from "../components/CountryDropdown";
+import  LeagueMatchResults  from "../components/MatchResults";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 
@@ -11,6 +12,7 @@ function TournamentSimulation() {
   const [numTeams, setNumTeams] = useState(null);
   const [homeAway, setHomeAway] = useState(false);
   const [selectedTeams, setSelectedTeams] = useState([]);
+  const [matchResults, setMatchResults] = useState(null);
 
   const handleAddTeam = (team) => {
     if (team && !selectedTeams.includes(team) && selectedTeams.length < numTeams) {
@@ -24,7 +26,12 @@ function TournamentSimulation() {
 
 
   const handleSimulate = () => {
-    mode === "League" ? simulateLeague(selectedTeams) : console.log("byebye");
+    if(mode === "League") {
+      const matchRes = simulateLeague(selectedTeams, homeAway);
+      setMatchResults(matchRes);
+    } else {
+      setMatchResults(null);
+    }
   };
 
   return (
@@ -100,11 +107,21 @@ function TournamentSimulation() {
 
           {numTeams === selectedTeams.length && (
             <div style={{marginTop:"2em"}}>
-              <button className="user-big-button" onClick={handleSimulate}>Simulate {mode}</button>
+              <button className="user-big-button" onClick={handleSimulate} style={{marginBottom: "2em"}}>
+                Simulate {mode}
+              </button>
             </div>
           )}
 
         </div>
+      )}
+
+      {matchResults && (
+        mode == "League" ? (
+          <LeagueMatchResults matchResults={matchResults} />
+        ) : (
+          <p>Knockout not yet supported</p>
+        )
       )}
 
       <div style={{ textAlign: "center", marginTop: "20px" }}>

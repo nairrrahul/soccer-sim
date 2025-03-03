@@ -1,0 +1,34 @@
+.match-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+  
+.matchday-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.matchday {
+  padding: 10px;
+  text-align: center;
+  min-width: 120px;
+  background-color: rgb(249, 249, 249);
+}
+
+.matchup {
+  font-size: 16px;
+}
+
+.matchday-header {
+    border-bottom: 1px solid grey;
+    padding-bottom: .3em;
+    padding-top: .3em;
+    margin: 0.2em;
+    background-color: rgb(235, 235, 235);
+}
+
