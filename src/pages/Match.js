@@ -3,8 +3,9 @@ import { simulateMatch } from "../components/MatchEngine";
 import countryStats from "../configs/CountryStats.json";
 import  CountryDropdown  from "../components/CountryDropdown";
 import MatchEvents from "../components/MatchEvents";
-import { FaFutbol } from "react-icons/fa";
+import { FaFutbol, FaHome } from "react-icons/fa";
 import Flag from 'react-world-flags';
+import { Link } from "react-router-dom";
 import './Match.css';
 
 
@@ -123,6 +124,15 @@ function Match() {
           
         </div>
       )}
+
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <Link to="/soccer-sim/">
+          <button style={{ margin: "10px", padding: "10px 20px", fontSize: "20px" }}>
+            <FaHome />
+          </button>
+        </Link>
+      </div>
+
     </div>
   );
 }

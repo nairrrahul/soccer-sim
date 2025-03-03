@@ -1,5 +1,9 @@
 import { useState } from "react";
+import { simulateLeague } from "../components/LeagueSimulation";
 import  CountryDropdown  from "../components/CountryDropdown";
+import { Link } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
+
 import './TournamentSimulation.css';
 
 function TournamentSimulation() {
@@ -20,7 +24,7 @@ function TournamentSimulation() {
 
 
   const handleSimulate = () => {
-    console.log("hello");
+    mode === "League" ? simulateLeague(selectedTeams) : console.log("byebye");
   };
 
   return (
@@ -102,6 +106,14 @@ function TournamentSimulation() {
 
         </div>
       )}
+
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <Link to="/soccer-sim/">
+          <button style={{ margin: "10px", padding: "10px 20px", fontSize: "20px" }}>
+            <FaHome />
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }
