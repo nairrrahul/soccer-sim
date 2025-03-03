@@ -2,6 +2,7 @@ import { useState } from "react";
 import { simulateLeague } from "../components/simulation/LeagueSimulation";
 import  CountryDropdown  from "../components/CountryDropdown";
 import  LeagueMatchResults  from "../components/MatchResults";
+import  TeamStandingsTable  from "../components/TeamStandingsTable";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 
@@ -120,6 +121,7 @@ function TournamentSimulation() {
         mode == "League" ? (
           <div>
             <h4>Final Table</h4>
+            <TeamStandingsTable teamCounts={matchResults.results} />
             <br />
             <h4>Round-by-Round Results</h4>
             <LeagueMatchResults matchResults={matchResults.matches} />
