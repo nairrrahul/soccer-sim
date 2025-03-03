@@ -32,7 +32,7 @@ function TournamentSimulation() {
       setMatchResults(matchRes);
     } else {
       const matchRes = simulateKnockouts(selectedTeams);
-      // setMatchResults(matchRes);
+      setMatchResults(matchRes);
       return;
     }
   };
@@ -120,7 +120,7 @@ function TournamentSimulation() {
       )}
 
       {matchResults && (
-        mode == "League" ? (
+        mode === "League" ? (
           <div>
             <h3>Final Table</h3>
             <TeamStandingsTable teamCounts={matchResults.results} />

@@ -16,7 +16,7 @@ function parseMatchResults(homeStruct, awayStruct, homeGoals, awayGoals) {
     if(homeGoals > awayGoals) {
         homeStruct.win += 1;
         awayStruct.loss += 1;
-    }else if(homeGoals == awayGoals) {
+    }else if(homeGoals === awayGoals) {
         homeStruct.draw += 1;
         awayStruct.draw += 1; 
     }else {

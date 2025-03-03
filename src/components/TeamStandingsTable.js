@@ -32,7 +32,7 @@ const TeamStandingsTable = ({ teamCounts }) => {
       </thead>
       <tbody>
         {sortedTeams.map(([team, stats], index) => (
-          <tr key={team}  style={{backgroundColor: index == 0 ? 'rgba(202, 232, 218, 0.642)': 'white'}}>
+          <tr key={team}  style={{backgroundColor: index === 0 ? 'rgba(202, 232, 218, 0.642)': 'white'}}>
             <td className="team-name">
               <Flag code={countryStats[team].code} height="20" /> {team}
             </td>

@@ -35,6 +35,20 @@ export function simulateMatch(team1, team2, knockout, tournament) {
     return gameStats;
 }
 
+export function parseKnockoutMatchWinner(gameStats) {
+    if(gameStats.homeGoalCount > gameStats.awayGoalCount) {
+        return gameStats.homeTeam;
+    } else if (gameStats.awayGoalCount > gameStats.homeGoalCount) {
+        return gameStats.awayTeam;
+    } else {
+        if (gameStats.penalties.homePensMade > gameStats.penalties.awayPensMade) {
+            return gameStats.homeTeam;
+        } else {
+            return gameStats.awayTeam;
+        }
+    }
+}
+
 
 function penaltyShootout(gameStats) {
     let homePenalties = [];
@@ -78,6 +92,8 @@ function penaltyShootout(gameStats) {
     }
 
     return {
+        homeTeam: gameStats.homeTeam,
+        awayTeam: gameStats.awayTeam,
         homeGoalCount: gameStats.homeGoalCount,
         homeGoalList: gameStats.homeGoalList,
         awayGoalCount: gameStats.awayGoalCount,
@@ -87,7 +103,7 @@ function penaltyShootout(gameStats) {
             awayPens: awayPenalties,
             awayPensMade: awayPensScored,
             homePens: homePenalties,
-            homePensMade: homePensScored,
+            homePensMade: homePensScored
         }
     };
 }
@@ -238,6 +254,8 @@ function coreEngine(team1Name, team2Name, minStart, minEnd, tournamentStatus) {
     }
 
     return {
+        homeTeam: team1,
+        awayTeam: team2,
         homeGoalCount: homeGoals,
         awayGoalCount: awayGoals,
         homeGoalList: homeGoalTimes,
