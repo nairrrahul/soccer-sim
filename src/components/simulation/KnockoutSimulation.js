@@ -1,7 +1,8 @@
 import countryStats from "../../configs/CountryStats.json";
 
 export function simulateKnockouts(teams) {
-  if(Math.log2(teams.length) - Math.floor(Math.log2(teams.length))) {
+  console.log('hsi');
+  if(Math.log2(teams.length) - Math.floor(Math.log2(teams.length)) !== 0) {
     return;
   }
   let matches = knockoutMatchups(teams);
@@ -21,7 +22,7 @@ function knockoutMatchups(teams) {
   while (startPtr <= endPtr) {
     matchups.push([teamRankings[startPtr], teamRankings[endPtr]]);
     startPtr += 1;
-    endPtr += 1;
+    endPtr -= 1;
   }
 
   return matchups;

@@ -1,13 +1,12 @@
 import { useState } from "react";
 import { simulateLeague } from "../components/simulation/LeagueSimulation";
+import { simulateKnockouts } from "../components/simulation/KnockoutSimulation";
 import  CountryDropdown  from "../components/CountryDropdown";
 import  LeagueMatchResults  from "../components/MatchResults";
 import  TeamStandingsTable  from "../components/TeamStandingsTable";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
-
 import './TournamentSimulation.css';
-import { simulateKnockouts } from "../components/simulation/KnockoutSimulation";
 
 function TournamentSimulation() {
   const [mode, setMode] = useState(null);
@@ -33,7 +32,8 @@ function TournamentSimulation() {
       setMatchResults(matchRes);
     } else {
       const matchRes = simulateKnockouts(selectedTeams);
-      setMatchResults(matchRes);
+      // setMatchResults(matchRes);
+      return;
     }
   };
 
