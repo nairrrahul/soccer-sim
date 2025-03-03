@@ -19,7 +19,7 @@ const LeagueMatchResults = ({ matchResults }) => {
     return (
       <div className="collapsible-container">
         <div className="collapsible-header" onClick={() => setIsExpanded(!isExpanded)}>
-          <h3>Match Events {isExpanded ? "▼" : "▶"}</h3>
+          <h3>Matches by Round {isExpanded ? "▼" : "▶"}</h3>
         </div>
         {isExpanded && (
           <div className="match-results-container">

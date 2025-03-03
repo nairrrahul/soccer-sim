@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 
 import './TournamentSimulation.css';
+import { simulateKnockouts } from "../components/simulation/KnockoutSimulation";
 
 function TournamentSimulation() {
   const [mode, setMode] = useState(null);
@@ -31,7 +32,8 @@ function TournamentSimulation() {
       const matchRes = simulateLeague(selectedTeams, homeAway);
       setMatchResults(matchRes);
     } else {
-      setMatchResults(null);
+      const matchRes = simulateKnockouts(selectedTeams);
+      setMatchResults(matchRes);
     }
   };
 
