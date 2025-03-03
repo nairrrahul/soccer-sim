@@ -120,10 +120,10 @@ function TournamentSimulation() {
       {matchResults && (
         mode == "League" ? (
           <div>
-            <h4>Final Table</h4>
+            <h3>Final Table</h3>
             <TeamStandingsTable teamCounts={matchResults.results} />
             <br />
-            <h4>Round-by-Round Results</h4>
+            <h3>Round-by-Round Results</h3>
             <LeagueMatchResults matchResults={matchResults.matches} />
           </div>
         ) : (

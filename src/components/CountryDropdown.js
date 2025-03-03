@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import countryStats from "../configs/CountryStats.json";
 
-// Sample list of countries
 const countries = Object.keys(countryStats);
 
 
