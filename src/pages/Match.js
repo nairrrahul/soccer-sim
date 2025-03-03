@@ -28,7 +28,7 @@ function Match() {
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
       <h1>One-Off Match</h1>
-      <div className="dropdownRow">
+      <div className="dropdown-row">
         <div style={{ marginBottom: "10px" }}>
           <p>Select Home Team</p>
           <CountryDropdown onSelect={setHomeTeam} />

@@ -1,0 +1,76 @@
+.centered-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+
+.user-button {
+    font-size: 1em;
+}
+
+.user-big-button {
+    font-size: 1.5em;
+    padding: 0.25em;
+}
+
+.tournament-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.checkbox-container {
+    margin-top: 10px;
+}
+
+.checkbox-container label {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.team-selection {
+    margin-top: 20px;
+}
+
+.all-teams-entered {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.too-many-teams {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.selected-teams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.team-box {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+}
+
+.remove-team {
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: red;
+    font-size: 16px;
+}
+
+.remove-team:hover {
+    color: darkred;
+}
