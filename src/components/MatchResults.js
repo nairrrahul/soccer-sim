@@ -22,13 +22,13 @@ const LeagueMatchResults = ({ matchResults }) => {
             {matchdayGroup.map(([matchday, matches]) => (
               <div key={matchday} className="matchday" style={{border: '1px solid grey'}}>
                 <h3 className='matchday-header'>Matchday {parseInt(matchday)+1}</h3>
-                {matches.map(([team1, team2], index) => (
+                {matches.map(([team1, team2, homeGoals, awayGoals]) => (
                   <div className='matchday-row'>
-                    <Flag code={countryStats[team1].code} height="16" />
-                    <p key={index} className='matchup'>{team1}</p>
-                    <p>-</p>
-                    <p key={index} className='matchup'>{team2}</p>
-                    <Flag code={countryStats[team2].code} height="16" />
+                    <Flag code={countryStats[team1].code} height="18" />
+                    <p className='matchup'>{team1}</p>
+                    <p className='match-score'>{homeGoals}-{awayGoals}</p>
+                    <p className='matchup'>{team2}</p>
+                    <Flag code={countryStats[team2].code} height="18" />
                   </div>
                 ))}
               </div>

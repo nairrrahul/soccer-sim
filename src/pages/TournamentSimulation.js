@@ -119,8 +119,10 @@ function TournamentSimulation() {
       {matchResults && (
         mode == "League" ? (
           <div>
-            <p>Only scheduling supported at the moment</p>
-            <LeagueMatchResults matchResults={matchResults} />
+            <h4>Final Table</h4>
+            <br />
+            <h4>Round-by-Round Results</h4>
+            <LeagueMatchResults matchResults={matchResults.matches} />
           </div>
         ) : (
           <p>Knockout not yet supported</p>
