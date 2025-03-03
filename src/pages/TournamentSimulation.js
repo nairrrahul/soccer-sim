@@ -118,7 +118,10 @@ function TournamentSimulation() {
 
       {matchResults && (
         mode == "League" ? (
-          <LeagueMatchResults matchResults={matchResults} />
+          <div>
+            <p>Only scheduling supported at the moment</p>
+            <LeagueMatchResults matchResults={matchResults} />
+          </div>
         ) : (
           <p>Knockout not yet supported</p>
         )
