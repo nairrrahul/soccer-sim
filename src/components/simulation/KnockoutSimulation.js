@@ -2,14 +2,27 @@ import countryStats from "../../configs/CountryStats.json";
 import { simulateMatch, parseKnockoutMatchWinner } from "./MatchEngine";
 
 
-export function simulateKnockouts(teams) {
+export function simulateKnockouts(teams, entrySeeding) {
   if(Math.log2(teams.length) - Math.floor(Math.log2(teams.length)) !== 0) {
     return;
   }
-  let matches = knockoutMatchups(teams).map(([team1, team2]) => [team1[0], team2[0]]);
+  let matches = !entrySeeding 
+    ? knockoutMatchups(teams).map(([team1, team2]) => [team1[0], team2[0]])
+    : listPairing(teams);
   let knockoutResults = knockoutRounds(matches);
   console.log(knockoutResults);
   return knockoutResults;
+}
+
+function listPairing(teams) {
+  if(teams.length % 2 !== 0) {
+    return;
+  }
+  let returnedList = [];
+  for(let i = 0; i < teams.length; i+=2) {
+    returnedList.push([teams[i], teams[i+1]]);
+  }
+  return returnedList;
 }
 
 function knockoutMatchups(teams) {

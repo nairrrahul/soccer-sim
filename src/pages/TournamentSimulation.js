@@ -15,6 +15,7 @@ function TournamentSimulation() {
   const [homeAway, setHomeAway] = useState(false);
   const [selectedTeams, setSelectedTeams] = useState([]);
   const [matchResults, setMatchResults] = useState(null);
+  const [entrySeeding, setEntrySeeding] = useState(false);
 
   const handleAddTeam = (team) => {
     if (team && !selectedTeams.includes(team) && selectedTeams.length < numTeams) {
@@ -32,7 +33,7 @@ function TournamentSimulation() {
       const matchRes = simulateLeague(selectedTeams, homeAway);
       setMatchResults(matchRes);
     } else {
-      const matchRes = simulateKnockouts(selectedTeams);
+      const matchRes = simulateKnockouts(selectedTeams, entrySeeding);
       setMatchResults(matchRes);
       return;
     }
@@ -117,6 +118,20 @@ function TournamentSimulation() {
             </div>
           )}
 
+        </div>
+      )}
+
+      {mode === "Knockout" && (
+        <div>
+          <label>
+            <input
+              type="checkbox"
+              checked={entrySeeding}
+              onChange={(e) => setEntrySeeding(e.target.checked)} 
+            />
+            Initial Knockout Pairs Based on Order of User Input
+          </label>
+          <p>User-based Pairing is {entrySeeding ? "Enabled" : "Disabled"}</p>
         </div>
       )}
 
