@@ -2,6 +2,7 @@ import { useState } from "react";
 import { simulateLeague } from "../components/simulation/LeagueSimulation";
 import { simulateKnockouts } from "../components/simulation/KnockoutSimulation";
 import  CountryDropdown  from "../components/CountryDropdown";
+import MatchOverview from "../components/MatchOverview";
 import  LeagueMatchResults  from "../components/MatchResults";
 import  TeamStandingsTable  from "../components/TeamStandingsTable";
 import { Link } from "react-router-dom";
@@ -42,8 +43,8 @@ function TournamentSimulation() {
       <h1>Tournament Simulation</h1>
 
       <div className="centered-buttons" style={{padding:"5px 5px 20px 5px", borderBottom: "1px solid grey"}}>
-        <button onClick={() => setMode("Knockout")} className="user-big-button">Knockout</button>
-        <button onClick={() => setMode("League")} className="user-big-button">League</button>
+        <button onClick={() => {setMode("Knockout"); setMatchResults(null);}} className="user-big-button">Knockout</button>
+        <button onClick={() => {setMode("League"); setMatchResults(null);}} className="user-big-button">League</button>
       </div>
 
       {mode === "Knockout" && (
@@ -129,7 +130,21 @@ function TournamentSimulation() {
             <LeagueMatchResults matchResults={matchResults.matches} />
           </div>
         ) : (
-          <p>Knockout not yet supported</p>
+          <div className="tournament-bracket">
+            <h2>Tournament Rounds</h2>
+            {Object.entries(matchResults.roundInfo).map(([roundName, results]) => (
+              <div className="round">
+                <h2 className="round-header">{roundName}</h2>
+                <div className="match-overview-container">
+                  {results.map((result) => (
+                    <div style={{backgroundColor:"rgba(202, 202, 202, 0.212)", border:"1px solid grey"}}>
+                      <MatchOverview result={result} version="mini"/>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         )
       )}
 

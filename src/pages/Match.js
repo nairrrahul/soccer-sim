@@ -55,7 +55,7 @@ function Match() {
       {result && (
         <div style={{ marginTop: "20px" }}>
           <MatchOverview result={result} />
-          {result.matchEvents && <MatchEvents matchEvents={result.matchEvents} />}
+          {result.matchEvents && <MatchEvents matchEvents={result.matchEvents} version="normal"/>}
         </div>
       )}
 
