@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/soccer-sim/static/css/main.90a0180c.css",
+    "main.css": "/soccer-sim/static/css/main.b9a0cafd.css",
     "main.js": "/soccer-sim/static/js/main.5aee1a2d.js",
     "static/js/453.10f87ade.chunk.js": "/soccer-sim/static/js/453.10f87ade.chunk.js",
     "index.html": "/soccer-sim/index.html",
-    "main.90a0180c.css.map": "/soccer-sim/static/css/main.90a0180c.css.map",
+    "main.b9a0cafd.css.map": "/soccer-sim/static/css/main.b9a0cafd.css.map",
     "main.5aee1a2d.js.map": "/soccer-sim/static/js/main.5aee1a2d.js.map",
     "453.10f87ade.chunk.js.map": "/soccer-sim/static/js/453.10f87ade.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90a0180c.css",
+    "static/css/main.b9a0cafd.css",
     "static/js/main.5aee1a2d.js"
   ]
 }
