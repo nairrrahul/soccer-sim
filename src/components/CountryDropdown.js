@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import countryStats from "../configs/CountryStats.json";
 
 const countries = Object.keys(countryStats);
@@ -7,6 +7,13 @@ const countries = Object.keys(countryStats);
 const CountryDropdown = ({onSelect}) => {
   const [input, setInput] = useState('');
   const [filteredCountries, setFilteredCountries] = useState([]);
+  const inputRef = useRef(null);
+
+  const handleFocus = () => {
+    if (inputRef.current) {
+      inputRef.current.select();
+    }
+  };
   
   const handleInputChange = (e) => {
     const value = e.target.value;
@@ -32,7 +39,9 @@ const CountryDropdown = ({onSelect}) => {
       <input
         type="text"
         value={input}
+        ref={inputRef}
         onChange={handleInputChange}
+        onFocus={handleFocus}
         placeholder="Start typing a country..."
         style={{ padding: '8px', width: '200px' }}
       />
