@@ -46,7 +46,7 @@ function knockoutRounds(matchups) {
       matchups = [];
     } else {
       let startPtr = 0;
-      let endPtr = 0;
+      let endPtr = matchups.length - 1;
       while(startPtr < endPtr) {
         let matchInfoA = simulateMatch(matchups[startPtr][0], matchups[startPtr][1], true, true);
         let matchInfoB = simulateMatch(matchups[endPtr][0], matchups[endPtr][1], true, true);

@@ -1,0 +1,104 @@
+.match-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.match-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.team {
+  flex: 1;
+  padding: 10px;
+  /* background-color: rgb(234, 235, 248); */
+}
+
+.team-right {
+  text-align: right;
+}
+
+.team-left {
+  text-align: left;
+}
+
+.team-name {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.score {
+  flex: 0.5;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  /* background-color: #aca4ce; */
+}
+
+.goal-list {
+  font-size: 18px;
+  color: #555;
+  min-height: 40px;
+}
+
+.goal-list-right {
+  text-align: right;
+  flex: 1;
+  padding-right: 10px;
+}
+
+.goal-list-left {
+  text-align: left;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.score-placeholder {
+  flex: 0.5;
+}
+
+.penalty-score {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.penalty-list {
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.penalty-list-right {
+  text-align: right;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.penalty-list-left {
+  text-align: left;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.penalty-success {
+  color: green;
+  font-size: 16px;
+}
+
+.penalty-fail {
+  color: red;
+  font-size: 16px;
+}

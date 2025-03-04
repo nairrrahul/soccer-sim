@@ -254,8 +254,8 @@ function coreEngine(team1Name, team2Name, minStart, minEnd, tournamentStatus) {
     }
 
     return {
-        homeTeam: team1,
-        awayTeam: team2,
+        homeTeam: team1Name,
+        awayTeam: team2Name,
         homeGoalCount: homeGoals,
         awayGoalCount: awayGoals,
         homeGoalList: homeGoalTimes,
