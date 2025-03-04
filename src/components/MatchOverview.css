@@ -79,6 +79,7 @@
   padding: 10px;
   display: flex;
   gap: 5px;
+  max-width: 40%;
 }
 
 .penalty-list-right {
